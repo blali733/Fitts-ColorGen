@@ -1,3 +1,5 @@
+<img src="https://img.shields.io/badge/status-Finished-darkgreen.svg">
+
 # Fitts-ColorGen
 Part of Fitts master project.
 

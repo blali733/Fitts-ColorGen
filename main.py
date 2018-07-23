@@ -75,9 +75,9 @@ class ColorMapper:
         payload = []
         for val in self.values:
             payload.append(self.dictionary[val])
-        result = {"name": name,
-                  "labels": self.values,
-                  "payload": payload}
+        result = {"Name": name,
+                  "Labels": self.values,
+                  "Payload": payload}
         with open("{}.json".format(name), "w+") as f:
             json.dump(result, f)
         exit()
