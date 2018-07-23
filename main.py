@@ -5,6 +5,8 @@ from colormath.color_conversions import convert_color
 import math
 import sys
 
+# set diff and step according to your needs.
+
 
 class ColorMapper:
     def __init__(self):
@@ -15,8 +17,8 @@ class ColorMapper:
         self.spacing = "log"
         self.dictionary = {}
         self.values = []
-        self.diff = 0.001
-        self.step = 0.01
+        self.diff = 0.0001
+        self.step = 0.005
 
     def setup_dictionary(self):
         for i in np.arange(self.range[0], self.range[1], self.range[2]):
