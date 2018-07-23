@@ -12,6 +12,7 @@ class ColorMapper:
         self.starting_point = LabColor(75, 0, 0, illuminant=self.illuminant)
         self.JND = 2.5
         self.range = (1.1, 2.2, 0.1)
+        self.spacing = "log"
         self.dictionary = {}
         self.values = []
         self.diff = 0.001
@@ -68,7 +69,7 @@ class ColorMapper:
                     prog += 1
                     inline_out_of_progress(prog, bound)
         print("Done")
-        name = "space_{}_{}".format(self.step, self.diff)
+        name = "space_{}_{}_{}".format(self.spacing, self.step, self.diff)
         payload = []
         for val in self.values:
             payload.append(self.dictionary[val])
