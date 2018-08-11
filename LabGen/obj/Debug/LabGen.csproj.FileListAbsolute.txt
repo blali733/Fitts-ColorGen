@@ -1,0 +1,12 @@
+E:\_magisterka\LabGen\LabGen\bin\Debug\LabGen.exe.config
+E:\_magisterka\LabGen\LabGen\bin\Debug\LabGen.exe
+E:\_magisterka\LabGen\LabGen\bin\Debug\LabGen.pdb
+E:\_magisterka\LabGen\LabGen\bin\Debug\Colourful.dll
+E:\_magisterka\LabGen\LabGen\bin\Debug\Newtonsoft.Json.dll
+E:\_magisterka\LabGen\LabGen\bin\Debug\Colourful.xml
+E:\_magisterka\LabGen\LabGen\bin\Debug\Newtonsoft.Json.xml
+E:\_magisterka\LabGen\LabGen\obj\Debug\LabGen.csprojAssemblyReference.cache
+E:\_magisterka\LabGen\LabGen\obj\Debug\LabGen.csproj.CoreCompileInputs.cache
+E:\_magisterka\LabGen\LabGen\obj\Debug\LabGen.csproj.CopyComplete
+E:\_magisterka\LabGen\LabGen\obj\Debug\LabGen.exe
+E:\_magisterka\LabGen\LabGen\obj\Debug\LabGen.pdb
