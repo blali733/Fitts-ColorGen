@@ -5,6 +5,9 @@
 /[Bb]uild/
 /[Bb]uilds/
 
+# Exclude rider idea data
+.idea
+
 /Assets/AssetStoreTools*
 
 # Visual Studio 2015 cache directory
