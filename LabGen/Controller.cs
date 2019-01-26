@@ -13,7 +13,7 @@ namespace LabGen
         {
             Color color = new Color(191, 191, 191);
             double diff = 0.0001;
-            double step = 0.005;
+            double step = 0.001;
             double jnd = 10;
             Model model = new Model(color, diff, step, jnd);
             model.GenerateSteps();

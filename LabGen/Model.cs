@@ -74,7 +74,8 @@ namespace LabGen
 
         public void GenerateSteps()
         {
-            for (int i = 11; i < 21; i++)
+            int[] vals = {7, 9, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20};
+            foreach (var i in vals)
             {
                 _generatedDataContainer.Labels.Add(Math.Round(Math.Pow(10, 0.1 * i), 2));
                 _generatedDataContainer.Payload.Add(new List<List<double>>());
@@ -116,7 +117,7 @@ namespace LabGen
                                         break;
                                     }
                                 }
-                                if (fuse == 0)
+                                if (fuse == 0 && _generatedDataContainer.Payload[_generatedDataContainer.Labels.IndexOf(roundColorDiff)].Count < 25)
                                 {
                                     _generatedDataContainer
                                         .Payload[_generatedDataContainer.Labels.IndexOf(roundColorDiff)]
@@ -125,6 +126,12 @@ namespace LabGen
                                     // Debug display only, thus not in view part
                                     System.Console.WriteLine(
                                         $"Found match with distance {roundColorDiff} at [{r}R, {g}G, {b}B]!");
+                                    string str = "Counts: ";
+                                    foreach (var cat in _generatedDataContainer.Payload)
+                                    {
+                                        str += $"{cat.Count}, ";
+                                    }
+                                    System.Console.WriteLine(str);
                                 }
                                 else
                                 {
